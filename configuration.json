@@ -1,0 +1,209 @@
+{
+  "defaults": [
+    {
+      "subject": "Dynamic Form Generator",
+      "sender": "",
+      "recipient": "",
+      "bcc": "",
+      "authentication": [
+        {
+          "user": "",
+          "pass": "",
+          "host": "",
+          "port": "",
+          "auth": true
+        }
+      ]
+    }
+  ],
+  "items": [
+      {
+      "id": "title",
+      "name": "Title",
+      "class": "col-sm-2",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "firstname",
+      "name": "First Name",
+      "class": "col-sm-5",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "lastname",
+      "name": "Last Name",
+      "class": "col-sm-5",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "address",
+      "name": "Address",
+      "class": "col-sm-12",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "city",
+      "name": "City",
+      "class": "col-sm-4",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "state",
+      "name": "State",
+      "class": "col-sm-4",
+      "style": "select",
+      "required": true,
+      "options": [
+        "AL",
+        "AK",
+        "AZ",
+        "AR",
+        "CA",
+        "CO",
+        "CT",
+        "DE",
+        "DC",
+        "FL",
+        "GA",
+        "HI",
+        "ID",
+        "IL",
+        "IN",
+        "IA",
+        "KS",
+        "KY",
+        "LA",
+        "ME",
+        "MD",
+        "MA",
+        "MI",
+        "MN",
+        "MS",
+        "MO",
+        "MT",
+        "NE",
+        "NV",
+        "NH",
+        "NJ",
+        "NM",
+        "NY",
+        "NC",
+        "ND",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VT",
+        "VA",
+        "WA",
+        "WV",
+        "WI",
+        "WY"
+      ]
+    },
+    {
+      "id": "zip",
+      "name": "Zip",
+      "class": "col-sm-4",
+      "style": "text",
+      "required": true
+    },
+    {
+      "id": "country",
+      "name": "Country",
+      "style": "text",
+      "class": "col-sm-4",
+      "required": true
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "class": "col-sm-4",
+      "style": "text",
+      "required": true,
+      "validation": "email"
+    },
+    {
+      "id": "telephone",
+      "name": "Phone",
+      "class": "col-sm-4",
+      "style": "text",
+      "required": true,
+      "validation": "phone"
+    },
+    {
+      "id": "gender",
+      "name": "Gender",
+      "class": "col-sm-6",
+      "style": "radio",
+      "required": true,
+      "options": [
+        "Male",
+        "Female"
+      ]
+    },
+    {
+      "id": "birthyear",
+      "name": "Birth Year",
+      "class": "col-sm-6",
+      "style": "select",
+      "required": true,
+      "range": [
+        1940,
+        2014
+      ]
+    },
+    {
+      "id": "currentage",
+      "name": "Current Age",
+      "class": "col-sm-6",
+      "style": "select",
+      "required": true,
+      "range": [
+        0,
+        65
+      ]
+    },
+    {
+      "id": "nameofthis",
+      "name": "Do you need to select more than one option?",
+      "class": "col-sm-6",
+      "style": "checkbox",
+      "options": [
+        "This",
+        "That",
+        "Something Else",
+        "Other"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "If other, please explain.",
+      "class": "col-sm-12",
+      "style": "textarea"
+    },
+    {
+      "id": "glasses",
+      "name": "Do you need to have a radio option?",
+      "class": "col-sm-6",
+      "style": "radio",
+      "required": true,
+      "options": [
+        "Yes",
+        "No",
+        "Don't know"
+      ]
+    }
+  ]
+}
